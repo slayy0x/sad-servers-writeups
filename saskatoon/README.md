@@ -10,23 +10,23 @@ I'll start off by running the `tail` command to see the last few lines of the fi
 
 As we can see, that's pretty hectic, and manually going through all of that would just be a waste of time. To resolve this issue, we can use regex expressions to gather all the IP addresses without all the extra data.
 
-![[saskatoon/regex.png]] ![[saskatoon/regex_results.png]]
+![path](saskatoon/regex.png) ![path](regex_results.png)
 
 ### Step 2: Output IP Addresses to a Text File
 
 Now this is a lot better; however, we would still have to manually count each and every IP address. Therefore, we will output the text to a text file and sort it out later.
 
-![[saskatoon/regex_to_ips.png]]
+![path](regex_to_ips.png)
 
 Notice in this command we are re-running the previous command, except we are adding `> ips.txt`, which will output all of the data into our text file `ips.txt`. However, because of the default directory that we are placed in, we don't have write access, so we will need to migrate to our home directory or `/tmp`.
 
-![[saskatoon/go_to_home.png]]
+![path](go_to_home.png)
 
 ### Step 3: Sort and Count IP Addresses
 
 Now that all the necessary data is in the proper place, we will use these commands to sort it out and place a number beside each IP address to represent how many duplicates there are of it.
 
-![[saskatoon/sort 1.png]]
+![path](sort.png)
 
 #### Explanation:
 
@@ -56,4 +56,4 @@ In this output:
 
 We can now look for the line with the biggest number and put it in the `highestip.txt` to complete the challenge.
 
-![[saskatoon/done 1.png]]
+![path](done.png)
