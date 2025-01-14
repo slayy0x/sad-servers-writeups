@@ -6,7 +6,7 @@ There's a web server access log file at `/home/admin/access.log`. The file consi
 
 I'll start off by running the `tail` command to see the last few lines of the file and understand what we're dealing with here.
 
-![[sad-servers-writeups/saskatoon/tail_access_log.png]]
+![path] ((tail_access_log.png))
 
 As we can see, that's pretty hectic, and manually going through all of that would just be a waste of time. To resolve this issue, we can use regex expressions to gather all the IP addresses without all the extra data.
 
