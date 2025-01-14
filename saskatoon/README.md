@@ -10,8 +10,7 @@ I'll start off by running the `tail` command to see the last few lines of the fi
 
 As we can see, that's pretty hectic, and manually going through all of that would just be a waste of time. To resolve this issue, we can use regex expressions to gather all the IP addresses without all the extra data.
 
-![path](saskatoon/regex.png) 
-![path](regex_results.png)
+![path](regex.png) ![path](regex_results.png)
 
 ### Step 2: Output IP Addresses to a Text File
 
